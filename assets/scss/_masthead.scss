@@ -1,3 +1,6 @@
+$black: #161616 ;
+
+
 .masthead {
   position: relative;
   width: 100%;
@@ -22,6 +25,8 @@
     max-width: 20rem;
     font-size: 1rem;
   }
+
+
   @media(min-width: 768px) {
     h1 {
       font-size: 4rem;

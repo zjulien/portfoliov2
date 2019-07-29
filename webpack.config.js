@@ -14,9 +14,9 @@ Encore
     .setPublicPath('/build')
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
-    .addStyleEntry('base', './assets/css/style.scss')
-    .addStyleEntry('bootstrap', './vendor/bootstrap/css/bootstrap.min.css')
-    .addStyleEntry('font', './vendor/fontawesome-free/css/all.min.css')
+    .addStyleEntry('style', './assets/scss/style.scss')
+    .addStyleEntry('bootstrap', './node_modules/bootstrap/dist/css/bootstrap.min.css')
+    .addStyleEntry('font', './node_modules/@fortawesome/fontawesome-free/css/all.min.css')
     /*
      * ENTRY CONFIG
      *
@@ -26,11 +26,12 @@ Encore
      * Each entry will result in one JavaScript file (e.g. app.js)
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
+    .addEntry('script', './assets/js/script.js')
     .addEntry('app', './assets/js/app.js')
     .addEntry('gray', './assets/js/grayscale.min.js')
-    .addEntry('jqueryeasy', './vendor/jquery-easing/jquery.easing.min.js')
-    .addEntry('Bootboot', './vendor/bootstrap/js/bootstrap.bundle.min.js')
-    .addEntry('jquery', './vendor/jquery.min.js')
+    .addEntry('jqueryeasy', './node_modules/jquery.easing/jquery.easing.min.js')
+    .addEntry('Bootstrapjs', './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js')
+    .addEntry('jquery', './node_modules/jquery/dist/jquery.min.js')
     
     //.addEntry('page1', './assets/js/page1.js')
     //.addEntry('page2', './assets/js/page2.js')
@@ -62,7 +63,7 @@ Encore
     })
 
     // enables Sass/SCSS support
-    //.enableSassLoader()
+    .enableSassLoader()
 
     // uncomment if you use TypeScript
     //.enableTypeScriptLoader()

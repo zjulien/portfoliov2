@@ -14,4 +14,13 @@ class DefaultController extends AbstractController
     {
         return $this->render('index.html.twig');
     }
+
+
+    /**
+     * @Route("/cv", name="cv")
+     */
+    public function cv(){
+
+        return $this->render('../../assets/medias/curriculum_vitae_zinet_julien.pdf');
+    }
 }

@@ -1,3 +1,14 @@
+@import './about';
+@import './buttons';
+@import './contact';
+@import './masthead';
+@import './mixins';
+@import './navbar';
+@import './projects';
+@import './signup';
+@import './variables';
+@import './grayscale';
+
 //colors
 $white_50: rgba(255, 255, 255, 0.5);
 $white_75: rgba(255, 255, 255, 0.75);
@@ -37,12 +48,12 @@ $url_1: url(../img/bg-signup.jpg);
 
 #mainNav {
 	min-height: 56px;
-	background-color: $white;
+	background-color: transparent;
 	.navbar-toggler {
 		font-size: 80%;
 		padding: 0.75rem;
-		color: $color_breaker_bay_approx;
-		border: 1px solid $color_breaker_bay_approx;
+		color: $black;
+		border: 1px solid $black;
 		&:focus {
 			outline: none;
 		}
@@ -53,11 +64,11 @@ $url_1: url(../img/bg-signup.jpg);
 		padding: .9rem 0;
 	}
 	.navbar-nav .nav-item {
-		&:hover {
-			color: fade(white, 80%);
-			outline: none;
-			background-color: transparent;
-		}
+		// &:hover {
+		// 	color: fade($color_blue_chill_approx, 80%);
+		// 	outline: none;
+		// 	background-color: transparent;
+		// }
 		&:active {
 			outline: none;
 			background-color: transparent;
@@ -85,9 +96,10 @@ $url_1: url(../img/bg-signup.jpg);
 			transition: none;
 			padding: 2rem 1.5rem;
 			color: $white_50;
-			&:hover {
-				color: $white_75;
-			}
+			// &:hover {
+			// 	color: $white_75;
+			// }
+			
 			&:active {
 				color: $white;
 			}
@@ -154,6 +166,7 @@ $url_1: url(../img/bg-signup.jpg);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-size: cover;
+	
 	h1 {
 		font-family: $font_0;
 		font-size: 2.5rem;
@@ -162,7 +175,8 @@ $url_1: url(../img/bg-signup.jpg);
 	}
 	h2 {
 		max-width: 20rem;
-		font-size: 1rem;
+		font-size: 2rem;
+		padding-top: 3%;
 	}
 }
 @media(min-width: 768px) {
@@ -290,6 +304,81 @@ $url_1: url(../img/bg-signup.jpg);
 	margin-top: 25px;
 	margin-left: -15px;
 }
+////section projet
+
+#projects{
+	height: 65vh;
+	position: relative;
+	background-color:black;
+	
+	//effect 3d des images
+	
+	//fin effet 3d des images
+*, 
+*:before, 
+*:after {
+  box-sizing: inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+// Absolute Background
+.absolute-bg {
+  position: absolute;
+  background-color:black;
+}
+
+// Fog
+.fog {
+  position: relative;
+
+  height: 100vh;
+  width: 100%;
+  
+  background-color: #000;
+
+  &__container {
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    // overflow: hidden;
+  }
+
+  &__img {
+    position: absolute;
+ 
+    height: 125vh;;
+    width: 300vw;
+
+    &--first {
+      background: url('https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-1.png') repeat-x;
+      background-size: contain;
+      background-position: center;
+      animation: marquee 60s linear infinite;
+    }
+
+    &--second {
+      background: url('https://res.cloudinary.com/dkr52htco/image/upload/v1536173269/fog-2.png') repeat-x;
+      background-size: contain;
+      background-position: center;
+      animation: marquee 40s linear infinite;
+    }
+  }
+}
+
+// Marquee
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-200vw, 0, 0); }
+}
+
+}
+//fin section projet
+
 .date {
 	background: $color_cerulean_approx;
 	display: inline-block;
@@ -343,6 +432,9 @@ body {
 		box-shadow: 0 20px 25px -15px $white_70;
 	}
 }
+///hover link
+
+///fin hover link
 .signup-section {
 	padding: 10rem 0;
 	background: linear-gradient(to bottom, $color_hunter_green_10_approx 0, $color_hunter_green_50_approx 75%, $color_hunter_green_approx 100%), $url_1;
@@ -390,9 +482,9 @@ body {
 			border-radius: 100%;
 			line-height: 3rem;
 			color: $white_30;
-			&:hover {
-				color: $white_50;
-			}
+			// &:hover {
+			// 	color: $white_50;
+			// }
 			&:active {
 				color: $white;
 			}
@@ -405,10 +497,10 @@ a {
 		text-decoration: none;
 		color: $color_william_approx;
 	}
-	&:hover {
-		text-decoration: none;
-		color: $color_william_approx;
-	}
+	// &:hover {
+	// 	text-decoration: none;
+	// 	color: $color_william_approx;
+	// }
 }
 .bg-black {
 	background-color: $color_hunter_green_approx !important;
@@ -442,6 +534,7 @@ form {
 		transition: opacity .800s linear;
 	}
 }
+
 .container-img::after {
 	content: ' +';
 	width: 270px;
@@ -476,6 +569,7 @@ form {
 .error {
 	border: 1px solid $red;
 }
+
 footer {
 	padding: 5rem 0;
 }

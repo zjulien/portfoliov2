@@ -1,3 +1,8 @@
+$white: #fff ;
+$black: #161616 ;
+$primary: #64a19d ;
+
+
 #mainNav {
   min-height: 56px;
   background-color: $white;
@@ -43,9 +48,10 @@
       transition: none;
       padding: 2rem 1.5rem;
       color: fade-out($white, .5);
-      &:hover {
-        color: fade-out($white, .25);
-      }
+      // &:hover {
+      //   color: fade-out($white, .25);
+      // }
+      
       &:active {
         color: white;
       }
@@ -66,9 +72,9 @@
           color: darken($primary, 15%);
         }
         &.active {
-          color: $primary;
+          color: $black;
           outline: none;
-          border-bottom: 0.25rem solid $primary;
+          border-bottom: 0.25rem solid $black;
         }
       }
     }

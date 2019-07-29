@@ -1,5 +1,6 @@
 {
     "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.9.0",
         "@symfony/webpack-encore": "^0.27.0",
         "copy-webpack-plugin": "^5.0.3",
         "core-js": "^3.0.0",
@@ -16,6 +17,7 @@
         "build": "./node_modules/@symfony/webpack-encore/bin/encore.js production --progress"
     },
     "dependencies": {
+        "bootstrap": "^4.3.1",
         "jquery": "^3.4.1",
         "jquery.easing": "1.4.1"
     }
