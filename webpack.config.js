@@ -14,6 +14,7 @@ Encore
     .setPublicPath('/build')
     // only needed for CDN's or sub-directory deploy
     //.setManifestKeyPrefix('build/')
+    .addStyleEntry('welcomeStyle', './assets/scss/welcome.scss')
     .addStyleEntry('style', './assets/scss/style.scss')
     .addStyleEntry('bootstrap', './node_modules/bootstrap/dist/css/bootstrap.min.css')
     .addStyleEntry('font', './node_modules/@fortawesome/fontawesome-free/css/all.min.css')
