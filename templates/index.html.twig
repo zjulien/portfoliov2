@@ -1,324 +1,581 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Portfolio!{% endblock %}
+{% block title %}Portfolio!
+{% endblock %}
 
 {% block body %}
 
-<body id="page-top">
+    <body
+        id="page-top">
 
-  <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">A propos</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#exp">Expériences</a>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projets</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="{{ path('cv') }}">CV</a>
-            </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
+                <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-toggle="collapse" type="button">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#about">A propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#exp">Expériences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#projects">Projets</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="{{ path('cv') }}">CV</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--Page d'accueil-->
 
-  <!-- Header -->
-  <header class="masthead" >
- 
-  <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-    <source src="https://www.videvo.net/videvo_files/converted/2014_07/preview/Nuvole_a_nero.mp473881.webm" type="video/mp4" style=" height:100vh">
-  </video>
-    <div class="container d-flex h-100 align-items-center">
-      <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Zinet julien</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">Développeur web et web mobile junior.</h2>
-      </div>
-    </div>
-  </header>
 
-  <!-- About Section -->
-  <section id="about" class="about-section text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">A propos</h2>
-          <p class="text-white-50">Exigua magis et decreverim cumulus gratulatio Supplicationem sententia dignitatem dignitatem dierum et ego Ergo
-            <p class="text-white-50">Exigua magis et decreverim cumulus gratulatio Supplicationem sententia dignitatem dignitatem dierum et ego Ergo quae cumulus hominis necessitatem hac hominis homines meum meum et ego quindecim quot reprehendant Rei satis.</p>
-            <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p> -->
+        <!-- Header -->
+        <header class="masthead">
+            <div class="container d-flex h-100 align-items-center">
+                <div class="mx-auto text-center" style="position:relative; top: 44px;">
+                    <h1 class="mx-auto my-0 text-uppercase">Zinet julien</h1>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Développeur web et web mobile junior.</h2>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="about-section text-center" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-white mb-4">A propos</h2>
+                        <p class="text-white-50">Exigua magis et decreverim cumulus gratulatio Supplicationem sententia dignitatem dignitatem dierum et ego Ergo</p>
+                        <p class="text-white-50">Exigua magis et decreverim cumulus gratulatio Supplicationem sententia dignitatem dignitatem dierum et ego Ergo quae cumulus hominis necessitatem hac hominis homines meum meum et ego quindecim quot reprehendant Rei satis.</p>
+                        <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p> -->
+                    </div>
+                </div>
+                <img alt="" class="img-fluid" src="img/ipad.png">
+            </div>
+        </section>
+        <!--- Expériences-->
+
+
+        <section class="about text-center" id="exp">
+            <h2>Expériences</h2>
+
+     <div class="timeline-item">
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <h2>Formation</h2>
+                    <i class="fas fa-angle-double-right ">Access Code School</i>
+                </h2>
+                <div class="date">Mars 2019 /Decembre 2019</div>
+                <p>développeur web et web mobile</p>
+                <ul>
+                    <li>Quelque chose</li>
+                    <li>Quelque chose</li>
+                    <li>Quelque chose</li>
+                </ul>
+            </div>
         </div>
-      </div>
-      <img src="img/ipad.png" class="img-fluid" alt="">
-    </div>
-  </section>
-<!--- Expériences-->
- 
 
-<section id="exp" class="about text-center">
-<h2>Expériences</h2>
+
+
+
+
+            <div class="timeline-item">
+                <div class="timeline-img"></div>
+
+                <div class="timeline-content js--fadeInLeft">
+                    <h2>Stagiaire
+                    </h2>
+                    <i class="fas fa-angle-double-right ">Devcsi</i>
+                </h2>
+                <div class="date">Septembre 2019 /Novembre 2019</div>
+                <p>Développement d'application</p>
+                <ul>
+                    <li>Quelque chose</li>
+                    <li>Quelque chose</li>
+                    <li>Quelque chose</li>
+                </ul>
+            </div>
+        </div>
+
+
 <div class="timeline-item">
-    <div class="timeline-img"></div>
-
-    <div class="timeline-content js--fadeInLeft">
-      <h2>Stagiaire informatique</h2>
-        <i class="fas fa-angle-double-right "></i> Informatique</h2>
-      <div class="date">Mars 2014 / Mars 2015</div>
-      <p>Maintenance informatique</p>
-        <ul>
-          <li>Quelque chose</li>
-          <li>Quelque chose</li>         
-          <li>Quelque chose</li>     
-           </ul>
-    </div>
-  </div>
-
-  <div class="timeline-item">
 
     <div class="timeline-img"></div>
 
     <div class="timeline-content js--fadeInRight">
-      <h2>Stagiaire informatique mairie Cosne cours sur loire</h2>
-      <div class="date">Avril 2013 / Février 2014</div>
-      
+        <h2>Stagiaire</h2>
+        <i class="fas fa-angle-double-right "> Mairie Cosne cours sur loire</i>
+        <div class="date">Octobre 2018 / Janvier 2019</div>
+            <p>Service informatique : installation d'application et maintenance</p>
         <ul>
-            <li>Quelque chose</li>
-            <li>Quelque chose</li>         
-            <li>Quelque chose</li>  
-      </ul>
+          <li>Maintenance informatique , </li>
+            <li>Installation de logiciel de travail</li>
+            
+            <li>résolution de problème lié à l'informatique, </li>
+        </ul>
     </div>
 
-  </div>
-  <div class="timeline-item">
-    <div class="timeline-img"></div>
+</div>
+        <div class="timeline-item">
+            <div class="timeline-img"></div>
 
-    <div class="timeline-content js--fadeInLeft">
-      <h2>Bac </h2>
-        <i class="fas fa-angle-double-right "></i>Bac pro comptabilité</h2>
-      <div class="date">Juillet 2012 / Mars 2013</div>
-     
-    </div>
-  </div>
-</section> 
+            <div class="timeline-content js--fadeInLeft">
+                <h2>Stagiaire</h2>
+                <i class="fas fa-angle-double-right ">JPG Informatique</i>
+            <div class="date">Février 2014 / Maï 2014</div>
+            <p>Maintenance informatique</p>
+            <ul>
+                <li>Conseil client </li>
+                <li>maintenance informatique </li>
+                <li>Dépannage et reconditionnement informatique </li>
+                
+            </ul>
+        </div>
+    </body>
+</div>
 
-  <!-- Projects Section -->
-  <section id="projects" class="fog">
-  <div class="fog__container container">
- 
+
+</section>
+<!-- Projects Section -->
+<section class="fog" id="projects">
+<div class="fog__container container">
+
     <div class="fog__img fog__img--first"></div>
     <div class="fog__img fog__img--second"></div>
-     <div class="row">
-    <div class="col-lg-12 text-center">
-     <h2 class="section-heading text-uppercase">Réalisation</h2>
-     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+    <div class="alignrealisation">
+    <div class="row">
+        <div class="col-lg-12 text-center" style="position: relative; left:15%;">
+            <h2 class="section-heading text-uppercase">Réalisation</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
         </div>
- </div>
-      <div class="row">
-     
+    </div>
+    <div class="row" id="realisation">
+
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img alt="" class="img-fluid" src="../assets/img/pancake-banane.png">
+            </a>
+            <div class="portfolio-caption">
+                <h4>BLABLA
+                </h4>
+                <p class="text-muted">Projet</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/01-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>BLABLA </h4>
-            <p class="text-muted">Projet</p>
-          </div>
-        </div>
-        <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="img/portfolio/02-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>BLABLA</h4>
-            <p class="text-muted">Projet </p>
-          </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img alt="" class="img-fluid" src="../assets/img/pancake-banane.png">
+            </a>
+            <div class="portfolio-caption">
+                <h4>BLABLA</h4>
+                <p class="text-muted">Projet
+                </p>
             </div>
-            <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>BLABLA</h4>
-            <p class="text-muted">Projet</p>
-          </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img alt="" class="img-fluid" src="../assets/img/pancake-banane.png">
+            </a>
+            <div class="portfolio-caption">
+                <h4>BLABLA</h4>
+                <p class="text-muted">Projet</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>BLABLA</h4>
-            <p class="text-muted">Projet</p>
-          </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img alt="" class="img-fluid" src="../assets/img/pancake-banane.png">
+            </a>
+            <div class="portfolio-caption">
+                <h4>BLABLA</h4>
+                <p class="text-muted">Projet</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>BLABLA</h4>
-            <p class="text-muted">Projet</p>
-          </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
-          <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
-            <div class="portfolio-hover">
-              <div class="portfolio-hover-content">
-                <i class="fas fa-plus fa-3x"></i>
-              </div>
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img alt="" class="img-fluid" src="../assets/img/pancake-banane.png">
+            </a>
+            <div class="portfolio-caption">
+                <h4>BLABLA</h4>
+                <p class="text-muted">Projet</p>
             </div>
-            <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
-          </a>
-          <div class="portfolio-caption">
-            <h4>BLABLA</h4>
-            <p class="text-muted">Projet</p>
-          </div>
         </div>
-      </div>
+        <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal6">
+                <div class="portfolio-hover">
+                    <div class="portfolio-hover-content">
+                        <i class="fas fa-plus fa-3x"></i>
+                    </div>
+                </div>
+                <img alt="" class="img-fluid" src="../assets/img/pancake-banane.png">
+            </a>
+            <div class="portfolio-caption">
+                <h4>BLABLA</h4>
+                <p class="text-muted">Projet</p>
+            </div>
+        </div>
+    </div>
 </div>
-  </section>
+</section>
+<!-- Signup Section -->
+<section class="signup-section bg-light" id="signup">
+<div class="container">
+    <canvas id="canvas"></canvas>
+    {# <div class="row"> #}
+    <div class="col-md-10 col-lg-8 mx-auto text-center">
 
-  <!-- Signup Section -->
-  <section id="signup" class="signup-section bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-10 col-lg-8 mx-auto text-center">
+        <!--left click add shapes-->
+        <!--right click remove shapes-->
+        <i class="far fa-paper-plane fa-2x mb-2 text-white"> </i>
+        <h2 class="text-white mb-5">Contact</h2>
 
-          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-          <h2 class="text-white mb-5">Contact</h2>
+        <!-- <form class="form-inline d-flex">
+                 <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+         <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+     </form> -->
 
-          <!-- <form class="form-inline d-flex">
-            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
-            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
-          </form> -->
-
-        </div>
-      </div>
+        {# </div>
+          </div> #}
     </div>
-  </section>
+</section>
 
-  <!-- Contact Section -->
-  <section class="contact-section bg-black">
+<!-- Contact Section -->
+<section class="contact-section bg-black">
     <div class="container">
 
-      <div class="row">
+        <div
+            class="row">
 
-        <!-- <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Address</h4>
-              <hr class="my-4">
+            <!-- <div class="col-md-4 mb-3 mb-md-0">
+        <div class="card py-4 h-100">
+     <div class="card-body text-center">
+        <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+                    <h4 class="text-uppercase m-0">Address</h4>
+        <hr class="my-4">
               <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+                   </div>
+                  </div>
+                    </div>
+                  <div class="col-md-4 mb-3 mb-md-0">
+            <div class="card py-4 h-100">
+             <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+               <h4 class="text-uppercase m-0">Email</h4>
+      <hr class="my-4">
+       <div class="small text-black-50">
+               <a href="#">hello@yourdomain.com</a>
+                       </div>
+                              </div>
+          </div>
+      </div>
+                                                            
+      <div class="col-md-4 mb-3 mb-md-0">
+       <div class="card py-4 h-100">
+           <div class="card-body text-center">
+          <i class="fas fa-mobile-alt text-primary mb-2"></i>
+                 <h4 class="text-uppercase m-0">Phone</h4>
+               <hr class="my-4">
+             <div class="small text-black-50">+1 (555) 902-8832</div>
+             </div>
+               </div>
+       </div> -->                                                       
+            <div class="col-12">
+                <form action="" novalidate>
+                    <div class="from-group">
+                        <label for="fullname">full name
+                            <span class="msg-error">
+                                <span>Erreur</span>Cette étape est obligatoire</span>
+                        </label>
+                        <input class="form-control" id="fullname" name="fullname" required type="text">
+                    </div>
+                    <div class="from-group">
+                        <label for="email">email
+                            <span class="msg-error">
+                                <span>Erreur</span>Saisir une adresse mail</span>
+                        </label>
+                        <input class="form-control" id="email" name="email" required type="email">
+                    </div>
+                    <div class="from-group">
+                        <label for="cp">code postal
+                            <span class="msg-error">
+                                <span>Erreur</span>Saisir un code postal</span>
+                        </label>
+                        <input class="form-control" id="cp" name="cp" pattern="\d\d\d\d\d" placeholder="ex format: 25000" required type="texte">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">message
+                            <span class="msg-error">
+                                <span>Erreur</span>Cette étape est obligatoire</span>
+                        </label>
+                        <textarea class="form-control" cols="30" id="message" name="message" required rows="10"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary" type="submit">Send</button>
+                </form>
             </div>
+        </div>
+
+        <div
+            class="social d-flex justify-content-center">
+            {# <a href="#" class="mx-2">
+                                                                      <i class="fab fa-twitter"></i>
+                                                                    </a> #}
+            <a class="mx-2" href="https://www.linkedin.com/in/julien-zinet/">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a class="mx-2" href="https://github.com/zjulien">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-black small text-center text-white-50">
+    <div
+        class="container"><!-- Copyright &copy; Your Website 2019 -->
+    </div>
+</footer>  <!-- Portfolio Modals -->
+
+  <!-- Modal 1 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
           </div>
         </div>
-
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-envelope text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Email</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">
-                <a href="#">hello@yourdomain.com</a>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Threads</li>
+                  <li>Category: Illustration</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
-        <div class="col-md-4 mb-3 mb-md-0">
-          <div class="card py-4 h-100">
-            <div class="card-body text-center">
-              <i class="fas fa-mobile-alt text-primary mb-2"></i>
-              <h4 class="text-uppercase m-0">Phone</h4>
-              <hr class="my-4">
-              <div class="small text-black-50">+1 (555) 902-8832</div>
+  <!-- Modal 2 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Explore</li>
+                  <li>Category: Graphic Design</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
             </div>
           </div>
-        </div> -->
-        <div class="col-12">
-            <form action="" novalidate>
-                <div class="from-group">
-                    <label for="fullname">full name <span class="msg-error"><span>Erreur</span>Cette étape est obligatoire</span></label>
-                    <input type="text" id="fullname" required name="fullname" class="form-control">
-                </div>
-                <div class="from-group">
-                    <label for="email">email <span class="msg-error"><span>Erreur</span>Saisir une adresse mail</span></label>
-                    <input type="email" id="email" required name="email" class="form-control">
-                </div>
-                <div class="from-group">
-                    <label for="cp">code postal <span class="msg-error"><span>Erreur</span>Saisir un code postal</span></label>
-                    <input type="texte" id="cp" required pattern="\d\d\d\d\d" name="cp" class="form-control" placeholder="ex format: 25000">
-                </div>
-
-                <div class="form-group">
-                    <label for="message">message <span class="msg-error"><span>Erreur</span>Cette étape est obligatoire</span></label>
-                    <textarea name="message" id="message" required class="form-control" cols="30" rows="10"></textarea>
-                </div>
-
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="social d-flex justify-content-center">
-        {# <a href="#" class="mx-2">
-          <i class="fab fa-twitter"></i>
-        </a> #}
-        <a href="https://www.linkedin.com/in/julien-zinet/" class="mx-2">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/zjulien" class="mx-2">
-          <i class="fab fa-github"></i>
-        </a>
+  <!-- Modal 3 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Finish</li>
+                  <li>Category: Identity</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
     </div>
-  </section>
+  </div>
 
-  <!-- Footer -->
-  <footer class="bg-black small text-center text-white-50">
-    <div class="container">
-      <!-- Copyright &copy; Your Website 2019 -->
+  <!-- Modal 4 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Lines</li>
+                  <li>Category: Branding</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </footer>
+  </div>
+
+  <!-- Modal 5 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Southwest</li>
+                  <li>Category: Website Design</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 6 -->
+  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl"></div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <div class="modal-body">
+                <!-- Project Details Go Here -->
+                <h2 class="text-uppercase">Project Name</h2>
+                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
+                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                <ul class="list-inline">
+                  <li>Date: January 2017</li>
+                  <li>Client: Window</li>
+                  <li>Category: Photography</li>
+                </ul>
+                <button class="btn btn-primary" data-dismiss="modal" type="button">
+                  <i class="fas fa-times"></i>
+                  Close Project</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 {% endblock %}

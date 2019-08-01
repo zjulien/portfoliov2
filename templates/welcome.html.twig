@@ -7,10 +7,10 @@
     <title>{% block title %}Portfolio{% endblock %}</title>
     {{ encore_entry_link_tags('welcomeStyle') }}
 </head>
-<body>
+
     <body>
 <div class="container demo">
-   <div class="content">
+   <div class="content" onclick='document.location.href="{{ path('index')}}"'>
       <div id="large-header" class="large-header">
          <canvas id="demo-canvas"></canvas>
          <h1 class="main-title"><span class="thin">Zinet Julien</span> <br>Développeur web </h1>
