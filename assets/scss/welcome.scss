@@ -6,7 +6,17 @@ $color_white_linen_approx: #f9f1e9;
 $url_0: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo-bg.jpg);
 
 body{
-	cursor:pointer;
+	#click{
+		display:block;
+		position:fixed;
+		z-index:10000;
+		height:100vh;
+		width:100vw;
+		// content:'pasvide';
+	// #madiv{
+	// 	// display:none;
+	background-image: $url_0;
+	
 
 .large-header {
 	position: relative;
@@ -45,6 +55,7 @@ body{
 @media only screen and(max-width: 768px) {
 	.demo .main-title {
 		font-size: 3em;
+			}
 		}
 	}
 }

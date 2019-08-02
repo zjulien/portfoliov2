@@ -12,6 +12,9 @@
   {# <link href="./app/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> #}
   {{ encore_entry_link_tags('bootstrap')}}
   
+  {# css accueil #}
+  {{ encore_entry_link_tags('welcomeStyle') }}
+
   <!-- Custom fonts for this template -->
   {# <link href="./app/vendor/fontawesome-free/css/all.min.css" rel="stylesheet"> #}
   {{ encore_entry_link_tags('font')}}
@@ -22,6 +25,9 @@
   <!-- Custom styles for this template -->
   {{ encore_entry_link_tags('style')}}
   {# <link href="./app/css/grayscale.css" rel="stylesheet"> #}
+  {# cdn aos #}
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 {% endblock %}
     </head>
     <body>
@@ -31,7 +37,11 @@
 <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js" ></script> 
 
 <!--fin script page d'accueil -->
-
+{# cdn aos  #}
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+ <script>
+    AOS.init();
+  </script>
         {% block body %}{% endblock %}
         {% block javascripts %}
             <!-- Script-->
@@ -53,10 +63,14 @@
 
   {{ encore_entry_script_tags('gray')  }}
 
+  {# library aos effet fade #}
+{{ encore_entry_script_tags('aos')}}
   <!--Script formulaire-->
   {# <script src="./app/js/script.js"></script> #}
 
   {{ encore_entry_script_tags('app') }}
+
+  {{ encore_entry_script_tags('signup')}}
 
         {% endblock %}
     </body>
