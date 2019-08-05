@@ -1,9 +1,11 @@
 /// page d'accueil
 
-document.querySelector("#click").onclick = function() {
+
+document.querySelector('#click').onclick = function() {
+
 
 document.querySelector("#madiv").style.display="none";
-
+document.querySelector('body').style.overflow = "scroll";
 }
 
 

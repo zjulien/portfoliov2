@@ -378,6 +378,16 @@ $url_0: url(../img/sunrise_header.jpg);
 	margin-top: 25px;
 	margin-left: -15px;
 }
+////expériences
+#exp{
+	overflow:hidden;
+
+
+
+}
+
+
+
 ////section projet
 
 #projects{
@@ -688,7 +698,7 @@ body {
 		}
 		h2{
 			position:relative;
-			z-index:10000;
+			z-index:1;
 			color: linear-gradient(top, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 43%, rgba(75,75,75,1) 99%, rgba(75,75,75,1) 100%) !important;
 		}
 

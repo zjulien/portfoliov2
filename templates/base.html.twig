@@ -31,20 +31,29 @@
 {% endblock %}
     </head>
     <body>
-    <!--script page d'accueil -->
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js" ></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js" ></script> 
+    
+    
 
-<!--fin script page d'accueil -->
+
+
+        {% block body %}{% endblock %}
+        {% block javascripts %}
 {# cdn aos  #}
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
  <script>
     AOS.init();
   </script>
-        {% block body %}{% endblock %}
-        {% block javascripts %}
             <!-- Script-->
+            <!--script page d'accueil -->
+            <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js" ></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js" ></script> 
+
+<!--fin script page d'accueil -->
+
+
+
+
         {{encore_entry_script_tags('script')}}
          <!-- Bootstrap core JavaScript -->
   {# <script src="./app/vendor/jquery.min.js"></script> #}
