@@ -20,6 +20,16 @@ $primary: #64a19d ;
     font-weight: 700;
     padding: .9rem 0;
   }
+  a.active {
+    color: #7d7d7d;
+    font-size:20px;
+    font-weight:bold;
+    text-decoration: overline ;
+    -webkit-text-decoration-color: #64a19d;
+    text-decoration-color: #64a19d; 
+    
+
+  }
   .navbar-nav {
     .nav-item {
       &:hover {
@@ -48,9 +58,9 @@ $primary: #64a19d ;
       transition: none;
       padding: 2rem 1.5rem;
       color: fade-out($white, .5);
-      // &:hover {
-      //   color: fade-out($white, .25);
-      // }
+      &:hover {
+        color: fade-out($white, .25);
+      }
       
       &:active {
         color: white;

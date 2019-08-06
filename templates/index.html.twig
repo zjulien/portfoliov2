@@ -5,8 +5,7 @@
 
 {% block body %}
 
-    <body
-        id="page-top">
+    <body id="page-top" data-spy="scroll" data-target="#mainNav" style= "position: relative" >
 
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -17,7 +16,7 @@
                     <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto" class="menuul">
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="#about">A propos</a>
                         </li>
@@ -25,7 +24,7 @@
                             <a class="nav-link js-scroll-trigger" href="#exp">Expériences</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#projects">Projets</a>
+                            <a class="nav-link js-scroll-trigger" href="#projects">Réalisation</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link js-scroll-trigger" href="{{ path('cv') }}">CV</a>
@@ -37,13 +36,16 @@
                 </div>
             </div>
         </nav>
+
+
+
         <!--Page d'accueil-->
 
 <div class="container demo" id="click" >
    <div class="content" id="madiv" >
       <div id="large-header" class="large-header">
          <canvas id="demo-canvas"></canvas>
-         <h1 class="main-title"><span class="thin">Zinet Julien</span> <br>Développeur web </h1>
+         <h2 class="main-title"><span class="thin">Zinet Julien</span> <br>Développeur web </h2>
       </div>
    </div>
 </div>
@@ -52,23 +54,23 @@
 <!--FIN PAGE D'ACCUEIL -->
 
         <!-- Header -->
-        <header class="masthead">
+        <header class="masthead scrollspy" id="header">
             <div class="container d-flex h-100 align-items-center">
-                <div class="mx-auto text-center" style="position:relative; top: 44px;">
+                <div class="mx-auto text-center" style="position:relative; top: 59px;">
                     <h1 class="mx-auto my-0 text-uppercase">Zinet julien</h1>
-                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Développeur web et web mobile junior.</h2>
+                    <h2 class="text-white-50 mx-auto mt-2 mb-5">Développeur web et web mobile.</h2>
                 </div>
             </div>
         </header>
 
         <!-- About Section -->
-        <section class="about-section text-center" id="about">
+        <section class="about-section text-center scrollspy" id="about">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 mx-auto">
                         <h2 class="text-white mb-4">A propos</h2>
-                        <p class="text-white-50">Exigua magis et decreverim cumulus gratulatio Supplicationem sententia dignitatem dignitatem dierum et ego Ergo</p>
-                        <p class="text-white-50">Exigua magis et decreverim cumulus gratulatio Supplicationem sententia dignitatem dignitatem dierum et ego Ergo quae cumulus hominis necessitatem hac hominis homines meum meum et ego quindecim quot reprehendant Rei satis.</p>
+                        <p class="text-white-50">Bienvenue sur mon portfolio.</p>
+                        <p class="text-white-50">je me nomme Julien, développeur web et web mobile en formation à l'Access code school.</p>
                         <!-- <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p> -->
                     </div>
                 </div>
@@ -78,7 +80,7 @@
         <!--- Expériences-->
 
 
-        <section class="about text-center" id="exp">
+        <section class="about text-center scrollspy" id="exp">
            <div id="titrexp"> <h2>Expériences</h2></div>
 
      <div class="timeline-item">
@@ -160,7 +162,7 @@
 
 </section>
 <!-- Projects Section -->
-<section class="fog" id="projects">
+<section class="fog scrollspy" id="projects">
 <div class="fog__container container">
 
     <div class="fog__img fog__img--first"></div>
@@ -171,7 +173,7 @@
             <h2 class="section-heading text-uppercase">Réalisation <a class="mx-2" href="https://github.com/zjulien">
                 <i class="fab fa-github"></i>
             </a></h2>
-            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            {# <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> #}
         </div>
     </div>
     <div class="row" id="realisation">
@@ -266,11 +268,11 @@
 </div>
 </section>
 <!-- Signup Section -->
-<section class="signup-section bg-light" id="signup">
+<section class="signup-section bg-light scrollspy" id="signup">
 <div class="container">
     <canvas id="canvas"></canvas>
     {# <div class="row"> #}
-    <div class="col-md-10 col-lg-8 mx-auto text-center">
+    <div class="col-md-10 col-lg-8 mx-auto text-center" id="centercontact">
 
         <!--left click add shapes-->
         <!--right click remove shapes-->
@@ -288,7 +290,7 @@
 </section>
 
 <!-- Contact Section -->
-<section class="contact-section bg-black">
+<section class="contact-section bg-black scrollspy">
     <div class="container">
 
         <div
@@ -330,7 +332,7 @@
             <div class="col-12">
                 <form action="" novalidate>
                     <div class="from-group">
-                        <label for="fullname">full name
+                        <label for="fullname">Nom complet
                             <span class="msg-error">
                                 <span>Erreur</span>Cette étape est obligatoire</span>
                         </label>
@@ -359,16 +361,10 @@
                         <textarea class="form-control" cols="30" id="message" name="message" required rows="10"></textarea>
                     </div>
 
-                    <button class="btn btn-primary" type="submit">Send</button>
+                    <button class="btn btn-primary" type="submit">Envoyer</button>
                 </form>
-            </div>
-        </div>
-
-        <div
-            class="social d-flex justify-content-center">
-            {# <a href="#" class="mx-2">
-                                                                      <i class="fab fa-twitter"></i>
-                                                                    </a> #}
+                <div class="social d-flex justify-content-center">
+            
             <a class="mx-2" href="https://www.linkedin.com/in/julien-zinet/">
                 <i class="fab fa-linkedin"></i>
             </a>
@@ -376,16 +372,21 @@
                 <i class="fab fa-github"></i>
             </a>
         </div>
+            </div>
+        </div>
+
+       
 
     </div>
 </section>
 
 <!-- Footer -->
 <footer class="bg-black small text-center text-white-50">
-    <div
-        class="container"><!-- Copyright &copy; Your Website 2019 -->
+     <div class="container">
+      Copyright &copy; Zinet Julien.
     </div>
-</footer>  <!-- Portfolio Modals -->
+</footer>  
+<!-- Portfolio Modals -->
 
   <!-- Modal 1 -->
   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">

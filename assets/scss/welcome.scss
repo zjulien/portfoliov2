@@ -37,6 +37,8 @@ body{
 		z-index:10000;
 		// display:none;
 	background-image: $url_0;
+
+
 	}
 
 .large-header {
@@ -56,8 +58,12 @@ body{
 	}
 	.main-title {
 		text-transform: uppercase;
-		font-size: 4.2em;
+		font-size:  4.5rem;
 		letter-spacing: 0.1em;
+
+	h2{
+	font-size:4.5rem !important;
+}
 	}
 }
 .main-title {

@@ -21,8 +21,9 @@ $black: #161616 ;
     -webkit-background-clip: text;
   }
   h2 {
-    max-width: 20rem;
-    font-size: 1rem;
+    max-width: 36rem;;
+			font-size: 1.9rem !important;
+			line-height: 2.5rem;
   }
   @media(min-width: 768px) {
     h1 {

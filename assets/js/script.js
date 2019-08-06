@@ -12,6 +12,49 @@ document.querySelector('body').style.overflow = "scroll";
 
 //fin page d'accueil
 
+//scrollSpy
+
+// (function($){
+
+//     var sections =[];
+//     var id = false;
+//     var $navbar = $('.navbar-nav');
+
+//     $('a', $navbar).each(function(){
+//         sections.push($($(this).attr('href')));
+        
+//     });
+
+//     $(window).scroll(function(e){
+//        var scrollTop =  $(this).scrollTop() + ($(window).height()  / 2)
+//        for(var i in sections){
+//          var  section = sections[i];
+//         if (scrollTop > section.offset().top){
+//                 id = section.attr('id');
+//         }
+//        }
+//        $('a', $navbar).removeClass('current');
+//     $('a[href="#'+ id + '"]', $navbar).addClass('current');
+// });
+// }) (jQuery);
+
+
+
+$(document).ready(function(){
+    $('#mainNav').pushpin({
+      top: $('#mainNav').offset().top
+    });
+    $('.scrollspy').scrollSpy({
+      scrollOfffset: 0
+    });
+  });
+
+
+
+//fin ScrollSpy
+
+
+
 // Formulaire
 
 // Variable 

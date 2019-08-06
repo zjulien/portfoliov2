@@ -138,8 +138,9 @@ $url_0: url(../img/sunrise_header.jpg);
 			letter-spacing: 0.8rem;
 		}
 		h2 {
-			max-width: 30rem;
-			font-size: 1.25rem;
+			max-width: 35rem !important;
+			font-size: 1.9rem !important;
+			line-height: 2.5rem;
 		}
 	}
 	.projects-section {
@@ -214,11 +215,12 @@ $url_0: url(../img/sunrise_header.jpg);
 	padding-top: 10rem;
 	background: linear-gradient(to bottom, $color_hunter_green_approx 0, $color_hunter_green_90_approx 75%, $color_hunter_green_80_approx 100%);
 	p {
-		margin-bottom: 5rem;
+		margin-bottom: 4rem;
+		font-size: 1.2rem;
 	}
 	h2{
 		color:linear-gradient(to bottom, $color_hunter_green_30_approx 0, $color_hunter_green_70_approx 75%, $color_hunter_green_approx 100%);
-		
+		font-size: 2rem;
 	}
 }
 .projects-section {
@@ -231,8 +233,13 @@ $url_0: url(../img/sunrise_header.jpg);
 		font-size: 90%;
 	}
 }
-#titreexp{
+#titrexp{
 	color:linear-gradient(to bottom, $color_hunter_green_30_approx 0, $color_hunter_green_70_approx 75%, $color_hunter_green_approx 100%);
+	h2{
+		margin-top:1.5rem;
+		margin-bottom:1.5rem;
+
+	}
 }
 .timeline {
 	position: relative;
@@ -391,7 +398,7 @@ $url_0: url(../img/sunrise_header.jpg);
 ////section projet
 
 #projects{
-	height: 65vh;
+	height: 70vh;
 	position: relative;
 	background-color:black;
 	overflow:hidden;
@@ -472,11 +479,12 @@ figure {
 	h2{
 		position:relative;
 		z-index:100;
-		font-size: 5.5rem;
+		font-size:  2.5rem;
 			line-height: 6.5rem;
 			letter-spacing: 0.8rem;
 		color:linear-gradient(top, rgba(237,237,237,1) 0%, rgba(237,237,237,1) 43%, rgba(75,75,75,1) 99%, rgba(75,75,75,1) 100%)!important;
-		
+		// margin-top: 1.5rem;
+		// margin-bottom: 1.5rem;
 	}
 	h3{
 		color:$color_smalt_blue_approx !important;
@@ -691,6 +699,12 @@ body {
 ////sign-up
 	#signup{
 
+		#centercontact{
+			position: absolute;
+  			 top: 79%;
+		}
+
+
 		i{
 			position:relative;
 			z-index:1;
@@ -862,4 +876,5 @@ form {
 
 footer {
 	padding: 5rem 0;
+
 }
