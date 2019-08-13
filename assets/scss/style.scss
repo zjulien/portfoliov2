@@ -87,6 +87,8 @@ $url_0: url(../img/sunrise_header.jpg);
 	}
 }
 
+//RESPONSIV MOBILE
+
 @media screen and (max-width: 1024px) {
 
 	#mainNav {
@@ -95,6 +97,7 @@ $url_0: url(../img/sunrise_header.jpg);
 			font-weight: 700;
 			padding: .9rem 0;
 		}
+
 		a.active {
 			color: #7d7d7d !important;
 			font-size: 20px;
@@ -103,6 +106,7 @@ $url_0: url(../img/sunrise_header.jpg);
 			-webkit-text-decoration-color: #64a19d;
 			text-decoration-color: #64a19d;
 		}
+
 		.navbar-toggler {
 			font-size: 1.2rem;
 			padding: 0.75rem;
@@ -114,34 +118,73 @@ $url_0: url(../img/sunrise_header.jpg);
 	.navbar-light {
 		.navbar-nav {
 			.nav-link {
-				color: rgba(255,255,255,.5)!important;
+				color: rgba(255, 255, 255, .5) !important;
 			}
 		}
 	}
 
-	#click{
-		h2{
+	#click {
+		h2 {
 			font-size: 2.5rem;
 		}
 	}
 
-#exp{
-	.timeline-content{
-		*, ::after, ::before {
+	#exp {
+		.timeline-content {
+
+
+			h2 {
+				margin-top: 3.2rem !important;
+			}
+		}
+
+		*,
+		::after,
+		::before {
 			box-sizing: content-box !important;
 		}
-		
-h2 {
-    margin-top: 3.2rem !important;
-}
 	}
-}
 
 
-#about{
-	padding-top:0;
-}
+	#about {
+		padding-top: 0;
+	}
 
+
+	#projects {
+
+		height: 100vh !important;
+
+		#TitreRea {
+			position: relative !important;
+			left: 0 !important;
+		}
+
+		#realisation {
+			/* text-align: center; */
+			position: relative !important;
+			top: 0 !important;
+			left: 0 !important;
+		}
+
+		.alignrealisation {
+			position: relative !important;
+			top: 0 !important;
+			left: 0 !important;
+			h2{
+			line-height: 2 !important;
+			letter-spacing: 0 !important;
+			}
+			.portfolio-item {
+				.portfolio-link {
+					.portfolio-hover {
+
+						height: 15.4vh;
+					}
+				}
+			}
+		}
+	}
 }
 
 
