@@ -89,7 +89,7 @@ $url_0: url(../img/sunrise_header.jpg);
 
 //RESPONSIV MOBILE
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 928px) {
 
 	#mainNav {
 		.navbar-brand {
@@ -187,8 +187,151 @@ $url_0: url(../img/sunrise_header.jpg);
 	}
 }
 
+//RESPONSIV IPAD
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+	
+	#projects {
 
+		height: 70vh !important;
 
+		.alignrealisation {
+			position: relative !important;
+			top: 95px !important;
+			left: 22px !important;
+
+			#TitreRea {
+				position: relative !important;
+				left: 13px !important;
+			}
+
+			h2 {
+				line-height: 3 !important;
+				letter-spacing: 8px !important;
+				color: white;
+			}
+		}
+		.modal-body {
+			position: relative;
+			-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
+			padding: 1rem;
+			font-size: 1.7rem;
+		}
+	}
+
+	#exp{
+		font-size: 1.4rem;
+	}
+	#about{
+		p{
+			font-size: 1.9rem;
+		}
+	}
+
+	.contact-section{
+		font-size: 1.7rem;
+
+	}
+
+   }
+
+//RESPONSIV IPAD PRO
+
+   @media only screen and (min-width: 1024px  ) 
+   and (max-width: 1366px)  {
+
+	#mainNav{
+		font-size: 1.7rem;
+
+		a.active{
+			font-size:31px;
+		}
+	}
+
+	#click{
+
+		.main-title{
+			h2{
+				font-size: 3rem;
+			}
+		}
+	}
+	#projects {
+
+		height: 70vh !important;
+
+		// #realisation {
+		// 	text-align: center;
+		// 	position: relative;
+		// 	top: 10%;
+		// 	left: 0 !important;
+		// }
+
+		.alignrealisation {
+			position: relative !important;
+			top: 95px !important;
+			left: 22px !important;
+
+			.portfolio-item {
+				right: 0;
+				margin: 42px 10px 19px !important;
+			}
+
+			#TitreRea {
+				position: relative !important;
+				left: 13px !important;
+			}
+
+			h2 {
+				line-height: 3 !important;
+				letter-spacing: 8px !important;
+				color: white;
+			}
+		}
+		.modal-body {
+			position: relative;
+			-ms-flex: 1 1 auto;
+			flex: 1 1 auto;
+			padding: 1rem;
+			font-size: 1.7rem !important;
+		}
+	}
+
+	#exp{
+		font-size: 1.4rem;
+
+		h2{
+			margin-top: 2rem;
+		}
+
+		p{
+			font-size: 2rem;
+		}
+		ul{
+			font-size: 2rem;
+		}
+	}
+
+	#signup
+	{
+
+	#centercontact {
+		
+		max-width: 89.666667%;
+	}
+} 
+	#about{
+		p{
+			font-size: 1.9rem;
+		}
+	}
+
+	.contact-section{
+		font-size: 1.7rem;
+
+	}
+	
+}
 @media(min-width: 992px) {
 	#mainNav {
 		padding-top: 0;
